@@ -1,0 +1,22 @@
+<div class="container">
+  <h2>Add Image</h2>
+  
+  <form (submit)="onSubmit()">
+    <label>Image ID:</label>
+    <input type="text" [value]="ImageId" disabled /><br/>
+
+    <label>Image Number:</label>
+    <input type="text" [(ngModel)]="imageNumber" name="imagenumber" required /><br/>
+
+    <label>Couple Name:</label>
+    <input type="text" [(ngModel)]="coupleName" name="couplename" required /><br/>
+
+    <label>Image Set:</label>
+    <input type="text" [(ngModel)]="imageSet" name="imageset" required /><br/>
+
+    <label>Select Image:</label>
+    <input type="file" (change)="onFileSelected($event)" required /><br/>
+
+    <button type="submit">Upload Image</button>
+  </form>
+</div>
