@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ImageService {
-  private apiUrl = '.netlify/functions/addImages'; // Update with your serverless function URL
+  private apiUrl = 'https://your-netlify-site.netlify.app/.netlify/functions/addImages'; // Update with your serverless function URL
 
   constructor(private http: HttpClient) {}
 
