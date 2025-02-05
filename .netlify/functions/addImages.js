@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const Image = require("./models/Image"); // Adjust path as needed
+const Image = require("../../models/Image"); // Adjust path as needed
 
 const DB_URI = process.env.MONGO_URI; // Ensure .env is configured
 
